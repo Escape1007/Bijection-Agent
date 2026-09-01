@@ -1,0 +1,36 @@
+{
+  "entry_id": "seed_dyck_312",
+  "title": "Dyck path → 312-avoiding permutation",
+  "identity_text": "Bijection between Dyck paths of semilength n and 312-avoiding permutations of [n]. Both have cardinality C_n (Catalan number). A permutation avoids 312 if no i<j<k exists with π_i > π_k > π_j. This bijection connects lattice path combinatorics with permutation pattern avoidance — two major branches of the Catalan family.",
+  "method_text": "Construction via active-site insertion using the generating tree model. Process the Dyck path left to right, tracking 'active sites' — positions in the growing permutation where a new maximum can be inserted. For each up-step U: insert the next available number (1,2,...,n in order) at the rightmost active site. For each down-step D: deactivate (close) the rightmost active site — no number is inserted, but the site becomes permanently unavailable. Equivalently: the Dyck path encodes the succession rule of 312-avoiding permutations; each U creates a new rightmost child in the generating tree, each D backtracks to the parent. The positions of U-steps, read left to right, correspond exactly to the left-to-right maxima of the resulting permutation. Inverse: given a 312-avoiding permutation π, scan left to right; output U for each new left-to-right maximum, output D for the number of closings needed to maintain the stack property between successive maxima.",
+  "proof_strategy_text": "Well-definedness strategy: There are exactly n U-steps, so n distinct numbers 1..n are inserted into the permutation, each exactly once. The active-site data structure maintains a stack: the rightmost active site corresponds to the deepest open level of the Dyck path (current height). A U-step increments height and pushes a new active site; a D-step decrements height and pops the rightmost site. The resulting permutation avoids 312 because: (1) numbers inserted at deeper active sites (opened later) are larger; (2) all numbers in open sites appear to the right of numbers in closed sites; (3) within closed sites, numbers decrease when ordered by closure time. These three properties collectively prevent any 312 pattern — any triple i<j<k would require π_i > π_k > π_j, which contradicts the active-site ordering constraints. Injectivity strategy: The generating tree is uniquely determined by the Dyck path — different U/D sequences produce different permutations. The inverse construction reads the left-to-right maxima from the permutation and reconstructs the U/D word deterministically. Surjectivity strategy: Every 312-avoiding permutation decomposes into its left-to-right maxima chain (the 'backbone') with nested blocks of non-maxima between them. The U/D word records this backbone structure. Combined with Catalan equality |Av_n(312)| = C_n = |Dyck_n|, the injective map between equal-cardinality sets is bijective.",
+  "technique_abstraction": "Sequential object construction via a stack-controlled active-site insertion process, governed by a two-letter word (open/close instructions). The core operation gene: read a sequence of open and close tokens left to right; maintain a stack of active insertion positions; each open token allocates the next available atomic label to the topmost active position; each close token retires the topmost active position permanently. The resulting composite object inherits a forbidden-substructure avoidance property from the stack discipline — the nesting of open/close tokens enforces that elements inserted in deeper (more recently opened) positions cannot participate in certain relative ordering patterns with elements from shallower (earlier opened) positions. The structural prerequisite: the target object class must have a generating-tree description where the succession rule corresponds to a two-letter word with balanced parentheses. The operation preserves: total element count (one label per open token); a canonical subsequence (the 'left-to-right maxima' or equivalent) whose length equals the maximum nesting depth. This gene generalizes to any pair of Catalan objects where one side has a 'sequential production by a context-free grammar' representation.",
+  "source_objects": ["dyck_path"],
+  "target_objects": ["pattern_avoiding_permutation"],
+  "methods": ["generating_tree", "active_site_insertion", "catalan_bijection"],
+  "constraints": ["semilength_n", "312_avoiding", "never_below_axis"],
+  "structural_features": ["path_like", "permutation_like"],
+  "preserved_stats": {},
+  "oeis_id": "A000108",
+  "first_terms": [1, 1, 2, 5, 14, 42, 132],
+  "bijection_type": "simple",
+  "paper_id": "krattenthaler-2001",
+  "source": "seed",
+  "reviewed": true,
+  "proof_text": "Well-definedness: There are n U-steps, each inserting a distinct number 1,...,n exactly once into the permutation. At each step the rightmost active site corresponds to the current 'open' level in the Dyck path. A D-step closes the deepest open level, which corresponds to the most recently opened active site. The permutation constructed has no 312 patterns because the active-site structure enforces that values inserted later (larger numbers) appear to the right of all values in still-open sites, while values in closed sites are to the left and decreasing when read from oldest to newest closure. Formally, the right-to-left minima form exactly n-k+1 levels corresponding to the Dyck path heights. Injectivity: Different Dyck paths give different sequences of U/D steps, hence different permutations. The generating tree is uniquely determined by the Dyck path. Surjectivity: Every 312-avoiding permutation can be decomposed into its 'up-down' structure by tracking left-to-right maxima. The Dyck word is recovered by recording U for each left-to-right maximum and D for each element that is not a left-to-right maximum. Both sets have size C_n, confirming bijectivity.",
+  "context": {
+    "paper_title": "Permutations with restricted patterns and Dyck paths",
+    "authors": ["C. Krattenthaler"],
+    "symbol_defs": {
+      "312-avoiding": "No triple i<j<k exists with π_i > π_k > π_j",
+      "active site": "position in the growing permutation available for insertion",
+      "generating tree": "recursive structure encoding the succession rule of a combinatorial class"
+    },
+    "references": [
+      "Krattenthaler (2001), 'Permutations with restricted patterns and Dyck paths', Adv. Appl. Math.",
+      "Bandiére (2002), 'Bijections between 312-avoiding permutations and Dyck paths'",
+      "OEIS A000108 — Catalan numbers"
+    ],
+    "research_context": "This is one of the simplest pattern-avoiding permutation bijections in the Catalan family. The 312-avoiding condition is particularly natural because it corresponds exactly to the stack-sortable permutations (Knuth). The bijection generalizes to other pattern-avoidance classes (e.g., 321-avoiding ↔ Dyck paths via a different map) and to permutations avoiding multiple patterns of length 3."
+  }
+}

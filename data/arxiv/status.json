@@ -1,0 +1,338 @@
+{
+  "2608.01136": {
+    "title": "Convolutive sequences, II: Parametrizations",
+    "status": "downloaded",
+    "source_file": "sources\\2608.01136.tar.gz",
+    "expanded_file": "expanded\\2608.01136.tex",
+    "updated": "2026-08-02",
+    "timestamp": "2026-08-19T14:07:52Z"
+  },
+  "2607.17296": {
+    "title": "Signed Counting on Restricted Partitions and Combinatorial Proofs of Three Identities",
+    "status": "downloaded",
+    "source_file": "sources\\2607.17296.tar.gz",
+    "expanded_file": "expanded\\2607.17296.tex",
+    "updated": "2026-07-19",
+    "timestamp": "2026-08-19T14:07:54Z"
+  },
+  "2607.04094": {
+    "title": "When arrow patterns meet classical patterns",
+    "status": "downloaded",
+    "source_file": "sources\\2607.04094.tar.gz",
+    "expanded_file": "expanded\\2607.04094.tex",
+    "updated": "2026-07-05",
+    "timestamp": "2026-08-19T14:08:11Z"
+  },
+  "2606.14367": {
+    "title": "On mesh patterns of short length: Equidistribution and enumeration",
+    "status": "downloaded",
+    "source_file": "sources\\2606.14367.tar.gz",
+    "expanded_file": "expanded\\2606.14367.tex",
+    "updated": "2026-06-12",
+    "timestamp": "2026-08-19T14:08:13Z"
+  },
+  "2510.13258": {
+    "title": "Parity patterns meet Genocchi numbers, I: four labelings and three bijections",
+    "status": "downloaded",
+    "source_file": "sources\\2510.13258.tar.gz",
+    "expanded_file": "expanded\\2510.13258.tex",
+    "updated": "2025-10-15",
+    "timestamp": "2026-08-19T14:08:15Z"
+  },
+  "2509.13097": {
+    "title": "An involution for trivariate symmetries of vincular patterns",
+    "status": "downloaded",
+    "source_file": "sources\\2509.13097.tar.gz",
+    "expanded_file": "expanded\\2509.13097.tex",
+    "updated": "2025-09-16",
+    "timestamp": "2026-08-19T14:08:17Z"
+  },
+  "2508.21318": {
+    "title": "Signed counting of partition matrices",
+    "status": "downloaded",
+    "source_file": "sources\\2508.21318.tar.gz",
+    "expanded_file": "expanded\\2508.21318.tex",
+    "updated": "2026-04-23",
+    "timestamp": "2026-08-19T14:08:19Z"
+  },
+  "2507.10965": {
+    "title": "Convolutive sequences, I: Through the lens of integer partition functions",
+    "status": "downloaded",
+    "source_file": "sources\\2507.10965.tar.gz",
+    "expanded_file": "expanded\\2507.10965.tex",
+    "updated": "2025-12-04",
+    "timestamp": "2026-08-19T14:08:20Z"
+  },
+  "2507.04698": {
+    "title": "On fourteen equidistribution conjectures of Lv and Zhang and monotone mesh patterns with corner shadings",
+    "status": "downloaded",
+    "source_file": "sources\\2507.04698.tar.gz",
+    "expanded_file": "expanded\\2507.04698.tex",
+    "updated": "2025-07-07",
+    "timestamp": "2026-08-19T14:08:24Z"
+  },
+  "2505.21111": {
+    "title": "A refined view of a curious identity for partitions into odd parts with designated summands",
+    "status": "downloaded",
+    "source_file": "sources\\2505.21111.tar.gz",
+    "expanded_file": "expanded\\2505.21111.tex",
+    "updated": "2025-05-27",
+    "timestamp": "2026-08-19T14:08:26Z"
+  },
+  "2503.20155": {
+    "title": "Symmetric statistics on rational Dyck paths",
+    "status": "downloaded",
+    "source_file": "sources\\2503.20155.tar.gz",
+    "expanded_file": "expanded\\2503.20155.tex",
+    "updated": "2026-02-23",
+    "timestamp": "2026-08-19T14:08:29Z"
+  },
+  "2502.10128": {
+    "title": "Consecutive and quasi-consecutive patterns: $\\mathrm{des}$-Wilf classifications and generating functions",
+    "status": "downloaded",
+    "source_file": "sources\\2502.10128.tar.gz",
+    "expanded_file": "expanded\\2502.10128.tex",
+    "updated": "2025-02-14",
+    "timestamp": "2026-08-19T14:08:31Z"
+  },
+  "2410.16985": {
+    "title": "Sequences of odd length in strict partitions II: the $2$-measure and refinements of Euler's theorem",
+    "status": "downloaded",
+    "source_file": "sources\\2410.16985.tar.gz",
+    "expanded_file": "expanded\\2410.16985.tex",
+    "updated": "2024-10-22",
+    "timestamp": "2026-08-19T14:08:33Z"
+  },
+  "2410.09777": {
+    "title": "Sequences of odd length in strict partitions I: the combinatorics of double sum Rogers-Ramanujan type identities",
+    "status": "downloaded",
+    "source_file": "sources\\2410.09777.tar.gz",
+    "expanded_file": "expanded\\2410.09777.tex",
+    "updated": "2024-10-13",
+    "timestamp": "2026-08-19T14:08:41Z"
+  },
+  "2306.13309": {
+    "title": "Partitions with parts separated by parity: conjugation, congruences and the mock theta functions",
+    "status": "downloaded",
+    "source_file": "sources\\2306.13309.tar.gz",
+    "expanded_file": "expanded\\2306.13309.tex",
+    "updated": "2023-06-23",
+    "timestamp": "2026-08-19T14:08:46Z"
+  },
+  "2202.02745": {
+    "title": "Combinatorial proofs and refinements of three partition theorems of Andrews",
+    "status": "downloaded",
+    "source_file": "sources\\2202.02745.tar.gz",
+    "expanded_file": "expanded\\2202.02745.tex",
+    "updated": "2022-02-06",
+    "timestamp": "2026-08-19T14:08:52Z"
+  },
+  "1909.07277": {
+    "title": "A new decomposition of ascent sequences and Euler--Stirling statistics",
+    "status": "downloaded",
+    "source_file": "sources\\1909.07277.tar.gz",
+    "expanded_file": "expanded\\1909.07277.tex",
+    "updated": "2019-09-16",
+    "timestamp": "2026-08-19T14:09:08Z"
+  },
+  "1902.00228": {
+    "title": "A lecture hall theorem for $m$-falling partitions",
+    "status": "downloaded",
+    "source_file": "sources\\1902.00228.tar.gz",
+    "expanded_file": "expanded\\1902.00228.tex",
+    "updated": "2019-02-01",
+    "timestamp": "2026-08-19T14:09:11Z"
+  },
+  "1804.01651": {
+    "title": "Multi-dimensional $q$-summations and multi-colored partitions",
+    "status": "downloaded",
+    "source_file": "sources\\1804.01651.tar.gz",
+    "expanded_file": "expanded\\1804.01651.tex",
+    "updated": "2018-04-05",
+    "timestamp": "2026-08-19T14:09:20Z"
+  },
+  "1803.06806": {
+    "title": "On certain unimodal sequences and strict partitions",
+    "status": "downloaded",
+    "source_file": "sources\\1803.06806.tar.gz",
+    "expanded_file": "expanded\\1803.06806.tex",
+    "updated": "2018-03-19",
+    "timestamp": "2026-08-19T14:09:22Z"
+  },
+  "1708.07928": {
+    "title": "Mahonian STAT on rearrangement class of words",
+    "status": "downloaded",
+    "source_file": "sources\\1708.07928.tar.gz",
+    "expanded_file": "expanded\\1708.07928.tex",
+    "updated": "2017-08-26",
+    "timestamp": "2026-08-19T14:09:26Z"
+  },
+  "1603.07068": {
+    "title": "A unifying combinatorial approach to refined little Göllnitz and Capparelli's companion identities",
+    "status": "downloaded",
+    "source_file": "sources\\1603.07068.tar.gz",
+    "expanded_file": "expanded\\1603.07068.tex",
+    "updated": "2017-06-25",
+    "timestamp": "2026-08-19T14:09:37Z"
+  },
+  "1311.5173": {
+    "title": "Signed Mahonian polynomials for major and sorting indices",
+    "status": "downloaded",
+    "source_file": "sources\\1311.5173.tar.gz",
+    "expanded_file": "expanded\\1311.5173.tex",
+    "updated": "2019-02-23",
+    "timestamp": "2026-08-19T14:09:40Z"
+  },
+  "2403.00378": {
+    "title": "A group action on cyclic compositions and $γ$-positivity",
+    "status": "downloaded",
+    "source_file": "sources\\2403.00378.tex",
+    "expanded_file": "expanded\\2403.00378.tex",
+    "updated": "2024-03-01",
+    "timestamp": "2026-08-19T14:11:48Z"
+  },
+  "2209.12137": {
+    "title": "Burstein's permutation conjecture, Hong and Li's inversion sequence conjecture, and restricted Eulerian distributions",
+    "status": "downloaded",
+    "source_file": "sources\\2209.12137.tex",
+    "expanded_file": "expanded\\2209.12137.tex",
+    "updated": "2022-09-25",
+    "timestamp": "2026-08-19T14:11:50Z"
+  },
+  "2208.11627": {
+    "title": "An involution on restricted Laguerre histories and its applications",
+    "status": "downloaded",
+    "source_file": "sources\\2208.11627.tex",
+    "expanded_file": "expanded\\2208.11627.tex",
+    "updated": "2022-08-24",
+    "timestamp": "2026-08-19T14:11:53Z"
+  },
+  "2111.05758": {
+    "title": "Rooted quasi-Stirling permutations of general multisets",
+    "status": "downloaded",
+    "source_file": "sources\\2111.05758.tex",
+    "expanded_file": "expanded\\2111.05758.tex",
+    "updated": "2021-11-10",
+    "timestamp": "2026-08-19T14:11:55Z"
+  },
+  "2109.11506": {
+    "title": "Permanent identities, combinatorial sequences, and permutation statistics",
+    "status": "downloaded",
+    "source_file": "sources\\2109.11506.tex",
+    "expanded_file": "expanded\\2109.11506.tex",
+    "updated": "2024-09-09",
+    "timestamp": "2026-08-19T14:11:57Z"
+  },
+  "2011.11302": {
+    "title": "A combinatorial bijection on di-sk trees",
+    "status": "downloaded",
+    "source_file": "sources\\2011.11302.tex",
+    "expanded_file": "expanded\\2011.11302.tex",
+    "updated": "2021-09-14",
+    "timestamp": "2026-08-19T14:11:59Z"
+  },
+  "2009.04269": {
+    "title": "Refined Wilf-equivalences by Comtet statistics",
+    "status": "downloaded",
+    "source_file": "sources\\2009.04269.tex",
+    "expanded_file": "expanded\\2009.04269.tex",
+    "updated": "2020-09-09",
+    "timestamp": "2026-08-19T14:12:02Z"
+  },
+  "2005.06354": {
+    "title": "$k$-arrangements, statistics and patterns",
+    "status": "downloaded",
+    "source_file": "sources\\2005.06354.tex",
+    "expanded_file": "expanded\\2005.06354.tex",
+    "updated": "2020-05-13",
+    "timestamp": "2026-08-19T14:12:04Z"
+  },
+  "2003.11813": {
+    "title": "On $\\underline{12}0$-avoiding inversion and ascent sequences",
+    "status": "downloaded",
+    "source_file": "sources\\2003.11813.tex",
+    "expanded_file": "expanded\\2003.11813.tex",
+    "updated": "2020-03-26",
+    "timestamp": "2026-08-19T14:12:06Z"
+  },
+  "1908.03912": {
+    "title": "Bijective recurrences concerning two Schröder triangles",
+    "status": "downloaded",
+    "source_file": "sources\\1908.03912.tex",
+    "expanded_file": "expanded\\1908.03912.tex",
+    "updated": "2019-08-11",
+    "timestamp": "2026-08-19T14:12:07Z"
+  },
+  "1810.06052": {
+    "title": "From $q$-Stirling numbers to the Delta Conjecture: a viewpoint from vincular patterns",
+    "status": "downloaded",
+    "source_file": "sources\\1810.06052.tex",
+    "expanded_file": "expanded\\1810.06052.tex",
+    "updated": "2019-02-17",
+    "timestamp": "2026-08-19T14:12:10Z"
+  },
+  "1805.08945": {
+    "title": "$(q,t)$-Catalan numbers: gamma expansions, pattern avoidance and the $(-1)$-phenomenon",
+    "status": "downloaded",
+    "source_file": "sources\\1805.08945.tex",
+    "expanded_file": "expanded\\1805.08945.tex",
+    "updated": "2018-10-14",
+    "timestamp": "2026-08-19T14:12:12Z"
+  },
+  "1709.06735": {
+    "title": "Some inequalities for $k$-colored partition functions",
+    "status": "downloaded",
+    "source_file": "sources\\1709.06735.tex",
+    "expanded_file": "expanded\\1709.06735.tex",
+    "updated": "2017-12-20",
+    "timestamp": "2026-08-19T14:12:13Z"
+  },
+  "1705.10067": {
+    "title": "On a generalized crank for $k$-colored partitions",
+    "status": "downloaded",
+    "source_file": "sources\\1705.10067.tex",
+    "expanded_file": "expanded\\1705.10067.tex",
+    "updated": "2017-06-28",
+    "timestamp": "2026-08-19T14:12:15Z"
+  },
+  "1705.05046": {
+    "title": "Generalizing a partition theorem of Andrews",
+    "status": "downloaded",
+    "source_file": "sources\\1705.05046.tex",
+    "expanded_file": "expanded\\1705.05046.tex",
+    "updated": "2017-05-15",
+    "timestamp": "2026-08-19T14:12:17Z"
+  },
+  "1612.01141": {
+    "title": "Multiranks and classical theta functions",
+    "status": "downloaded",
+    "source_file": "sources\\1612.01141.tex",
+    "expanded_file": "expanded\\1612.01141.tex",
+    "updated": "2017-06-28",
+    "timestamp": "2026-08-19T14:12:18Z"
+  },
+  "1604.04028": {
+    "title": "Partitions with fixed largest hook length",
+    "status": "downloaded",
+    "source_file": "sources\\1604.04028.tex",
+    "expanded_file": "expanded\\1604.04028.tex",
+    "updated": "2016-04-14",
+    "timestamp": "2026-08-19T14:12:20Z"
+  },
+  "1507.05184": {
+    "title": "On two unimodal descent polynomials",
+    "status": "downloaded",
+    "source_file": "sources\\1507.05184.tex",
+    "expanded_file": "expanded\\1507.05184.tex",
+    "updated": "2019-02-05",
+    "timestamp": "2026-08-19T14:12:22Z"
+  },
+  "1108.4702": {
+    "title": "The negative q-binomial",
+    "status": "downloaded",
+    "source_file": "sources\\1108.4702.tex",
+    "expanded_file": "expanded\\1108.4702.tex",
+    "updated": "2011-08-23",
+    "timestamp": "2026-08-19T14:12:25Z"
+  }
+}

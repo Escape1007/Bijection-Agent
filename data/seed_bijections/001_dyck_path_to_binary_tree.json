@@ -1,0 +1,36 @@
+{
+  "entry_id": "seed_dyck_btree",
+  "title": "Dyck path → Binary tree (depth-first traversal)",
+  "identity_text": "Bijection between Dyck paths of semilength n and binary trees with n internal nodes. Both counted by C_n = (1/(n+1))*binom(2n,n). A Dyck path: lattice path from (0,0) to (2n,0) with up-steps U=(1,1) and down-steps D=(1,-1), never below x-axis. A binary tree: rooted plane tree where every node has 0 or 2 children (internal nodes counted).",
+  "method_text": "Recursive decomposition via first return to x-axis. Given a Dyck path P of semilength n: (1) If n=0, map to the single-node leaf. (2) Otherwise, the first step is U; find its matching D where the path first returns to 0 (position 2k). The subpath P1 between positions 1 and 2k-1 is a Dyck path of semilength k-1; the suffix P2 after 2k is a Dyck path of semilength n-k. Recursively construct left subtree f(P1) and right subtree f(P2). The root of the resulting binary tree has left child = root of f(P1), right child = root of f(P2). Inverse: depth-first traversal of a binary tree outputs U when descending to left child, D when returning from right child.",
+  "proof_strategy_text": "Well-definedness strategy: Every nonempty Dyck path starts with U; the first return to the x-axis always occurs at an even position because a path that goes to height 1 must take an even number of steps to return. The subpath inside U...D, when shifted down by 1, is itself a Dyck path. The suffix after the first return is also a Dyck path, verifying the recursive decomposition is structurally valid. Injectivity strategy: By induction on n. If two paths produce the same tree, their left subtrees (from P1) and right subtrees (from P2) match by inductive hypothesis. The first return position is determined by left subtree size, forcing the U...D prefix to match. Surjectivity strategy: Given any binary tree T with left and right subtrees having n1, n2 internal nodes (n1+n2+1=n), inductively obtain Dyck paths for each subtree, then assemble as U·P1·D·P2. Verify the assembled path is Dyck — U raises to height 1, P1 stays ≥1, D returns to 0, P2 stays ≥0. Since both sets have cardinality C_n (Catalan equality), injectivity on equal-cardinality finite sets automatically implies surjectivity — a key shortcut that avoids explicitly constructing the inverse for every case.",
+  "technique_abstraction": "Recursive matching via canonical extremal decomposition. The core operation gene: identify a unique extremal element in the source structure (here: the first return to the baseline), decompose the object into independent sub-objects of the same type lying strictly inside and strictly after the extremal marker, recursively apply the same mapping to each sub-object, then reassemble in the target structure following the same decomposition topology. The key structural prerequisite: the source and target object classes must admit isomorphic recursive decompositions — both decompose into two sub-objects of the same type with a connector element, and the size measure strictly decreases in each sub-object. The operation preserves: total size distributed among sub-components, and the nested/non-crossing property inherited by sub-structures. This gene generalizes to any pair of recursively defined structures where a canonical 'first return' or 'outermost' decomposition exists.",
+  "source_objects": ["dyck_path"],
+  "target_objects": ["binary_tree"],
+  "methods": ["recursive_decomposition", "depth_first_traversal"],
+  "constraints": ["semilength_n", "never_below_axis"],
+  "structural_features": ["path_like", "tree_like"],
+  "preserved_stats": {},
+  "oeis_id": "A000108",
+  "first_terms": [1, 1, 2, 5, 14, 42, 132],
+  "bijection_type": "simple",
+  "paper_id": "stanley-1999-catalan",
+  "source": "seed",
+  "reviewed": true,
+  "proof_text": "Well-definedness: Every nonempty Dyck path starts with U. The first return to the x-axis always occurs at an even position 2k (k≥1) because the path starts at 0, goes to height 1 at step 1, and must return to 0 after an even number of steps. The subpath from step 2 to step 2k-1 is itself a Dyck path: it starts and ends at height 1 (shifted by +1 from the original), never dips below height 1. Similarly the suffix from step 2k+1 to 2n is a Dyck path of semilength n-k. Injectivity: Suppose f(P)=f(Q). At the root, the left subtree is f(P1) and right subtree is f(P2). By induction on n, P1=Q1 and P2=Q2. The first return positions must also match (determined by left subtree sizes). Therefore P=Q. Surjectivity: Given any binary tree T with n internal nodes, let T1,T2 be its left and right subtrees with n1,n2 internal nodes (n1+n2+1=n). By induction there exist Dyck paths P1,P2 of semilengths n1,n2 mapping to them. Form P = U P1 D P2. This is a Dyck path because U raises to height 1, P1 stays ≥1 (shifted), D returns to 0, P2 stays ≥0. The first return to axis occurs after U P1 D (2n1+2 steps). Thus f(P)=T. Since |Dyck_n| = C_n = |BinaryTree_n|, injectivity on equal-cardinality finite sets implies surjectivity.",
+  "context": {
+    "paper_title": "Enumerative Combinatorics, Volume 2",
+    "authors": ["Richard P. Stanley"],
+    "symbol_defs": {
+      "U": "up-step (1,1)",
+      "D": "down-step (1,-1)",
+      "Dyck_n": "set of Dyck paths of semilength n",
+      "C_n": "n-th Catalan number = (1/(n+1))*binom(2n,n)"
+    },
+    "references": [
+      "Stanley, Enumerative Combinatorics Vol. 2, Ch. 6 (Catalan numbers)",
+      "OEIS A000108 — Catalan numbers"
+    ],
+    "research_context": "This is the most fundamental Catalan bijection. It establishes the bijective equivalence of Dyck paths and binary trees, two of the most important members of the Catalan family. The recursive decomposition pattern (first return to axis) generalizes to many other Catalan bijections. Stanley's Catalan addendum lists 66 combinatorial interpretations of C_n; this bijection connects items (i) Dyck paths and (bb) binary trees."
+  }
+}

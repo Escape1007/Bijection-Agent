@@ -1,0 +1,36 @@
+{
+  "entry_id": "seed_nc_btree",
+  "title": "Noncrossing partition → Binary tree (complement arc decomposition)",
+  "identity_text": "Bijection between noncrossing partitions of [n] and binary trees with n nodes. A noncrossing partition of [n] is a set partition where no two blocks cross — formally, no a<b<c<d exist with a,c in one block and b,d in another. When drawn as convex polygons connecting points 1..n on a circle, blocks are disjoint or nested. Both sets have C_n elements.",
+  "method_text": "Complement arc decomposition. Place points 1,...,n clockwise on a circle. A noncrossing partition π is drawn as convex polygons connecting each block's elements; 'noncrossing' means polygons are disjoint or nested. To map π to a binary tree: (1) Identify the block containing element 1, say {1, i₂, ..., i_k} with 1 < i₂ < ... < i_k. This is the 'outermost' block. (2) The k elements of this block partition the remaining elements [2,n]−{i₂,...,i_k} into k contiguous circular arcs (complement arcs). Each arc induces a smaller noncrossing sub-partition — restricted to the arc, blocks remain noncrossing. (3) Arc 1 (between 1 and i₂) maps to the left subtree of the root. The remaining k−1 arcs map recursively along a right-child chain: arc 2 is the left subtree of the first right child, arc 3 the left subtree of the second right child, etc. Inverse: given a binary tree with n nodes, label them 1,...,n in preorder traversal. For each node v, form a block consisting of v together with all nodes in the left subtree of v. Each block defines a convex polygon; along right-child chains the blocks are disjoint; left subtrees produce nested blocks. The result is a noncrossing partition.",
+  "proof_strategy_text": "Well-definedness strategy: A noncrossing partition restricted to any contiguous circular arc remains noncrossing — blocks that were noncrossing on the full circle cannot cross when restricted to a sub-arc. The block containing 1 splits the remaining elements into exactly k contiguous arcs because the block elements act as separators on the circle. Each sub-arc has strictly fewer elements than n, guaranteeing recursive termination. Injectivity strategy: The block containing 1 is unique and uniquely determined. The decomposition into sub-arc partitions is unique — each complement arc corresponds to a specific circular interval. Different noncrossing partitions produce different sequences of subtrees along the right-child chain because at least one block differs, which manifests as a difference in at least one of the recursive sub-problems. Surjectivity strategy: Given any binary tree T with n nodes, label nodes in preorder. For each node v, form the block {v} ∪ {all nodes in v's left subtree}. This construction satisfies: (1) along right-child chains blocks are disjoint (the left subtrees of right-chained nodes occupy disjoint preorder intervals); (2) across levels blocks are nested (if v is in w's left subtree, v's entire block is a subset of w's block). The result is a noncrossing partition. Cardinality equality |NC(n)| = C_n = |BinaryTree(n)| combined with injectivity yields bijectivity.",
+  "technique_abstraction": "Circular decomposition via canonical element and complement arcs. The core operation gene: arrange elements on a circle and select a canonical starting element (element 1, or equivalently the unique minimal element). Identify the block/cluster containing this element — this is the 'outermost' structural component. The elements of this block partition the circle into contiguous arcs; each arc defines an independent sub-problem of the same type on a strictly smaller set. Map the outermost block to the root of a recursive tree structure; map the sub-problems to subtrees along a chain determined by arc order. The structural prerequisite: the source object must admit a circular representation with a well-defined notion of non-crossing/nesting; the target must support a recursive decomposition into a distinguished root and ordered sub-components. The operation preserves: total element count; the nested/noncrossing property inherited by sub-structures restricted to arcs; a correspondence between 'block nesting depth' and 'tree depth along left-child chains'. This gene generalizes to any pair of structures where one side has a circular noncrossing decomposition and the other has a recursive tree structure — the complement arc decomposition is the universal bridge between circular noncrossing combinatorics and rooted tree combinatorics.",
+  "source_objects": ["noncrossing_partition"],
+  "target_objects": ["binary_tree"],
+  "methods": ["complement_arc", "circular_decomposition", "block_traversal", "catalan_bijection"],
+  "constraints": ["size_n", "noncrossing", "on_circle"],
+  "structural_features": ["partition_like", "tree_like"],
+  "preserved_stats": {},
+  "oeis_id": "A000108",
+  "first_terms": [1, 1, 2, 5, 14, 42, 132],
+  "bijection_type": "simple",
+  "paper_id": "stanley-1999-catalan-exercise-6.19",
+  "source": "seed",
+  "reviewed": true,
+  "proof_text": "Well-definedness: A noncrossing partition restricted to any contiguous circular arc remains noncrossing. The block containing 1 splits the remaining elements into contiguous arcs because the elements of the block act as separators on the circle. Each sub-arc has strictly fewer elements, so the recursion terminates. Injectivity: The block containing 1 is uniquely determined. The decomposition into sub-arc partitions is unique. Different noncrossing partitions produce different sequences of subtrees in the right-child chain. Surjectivity: Given any binary tree T with n nodes, label nodes in preorder. For each node v, the set {v} ∪ {all nodes in the left subtree of v} forms a block. Along right-child chains, these blocks are disjoint; across levels (left subtrees), they are nested. This produces a noncrossing partition. By Catalan equality |NC(n)| = C_n = |BinaryTree(n)|, the map is bijective.",
+  "context": {
+    "paper_title": "Enumerative Combinatorics, Volume 2",
+    "authors": ["Richard P. Stanley"],
+    "symbol_defs": {
+      "noncrossing partition": "set partition of [n] where blocks, drawn as convex hulls on a circle, do not cross",
+      "complement arc": "circular arc between two consecutive elements of a block on the circle",
+      "right-child chain": "sequence of nodes connected by right-child links in a binary tree"
+    },
+    "references": [
+      "Stanley, Enumerative Combinatorics Vol. 2, Exercise 6.19",
+      "Simion (2000), 'Noncrossing partitions', Discrete Math.",
+      "OEIS A000108 — Catalan numbers"
+    ],
+    "research_context": "Noncrossing partitions occupy a central position in algebraic combinatorics, with deep connections to free probability (Voiculescu), the lattice of noncrossing partitions (Kreweras), and Coxeter groups. Every Catalan family bijection generates a corresponding bijection on noncrossing partitions by composition. This seed demonstrates the 'circular decomposition' technique that generalizes to other structures defined on circularly arranged elements."
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "entry_id": "seed_rsk",
+  "title": "RSK: Permutation → (P,Q) Standard Young Tableaux pair",
+  "identity_text": "Robinson-Schensted-Knuth correspondence: a bijection between permutations of [n] and pairs (P,Q) of standard Young tableaux of the same shape λ ⊢ n. The shape λ encodes combinatorial properties: λ₁ = length of longest increasing subsequence, λ'₁ = length of longest decreasing subsequence. RSK is the most important bijection connecting permutations to Young tableaux.",
+  "method_text": "Row-insertion (Schensted insertion) algorithm. Given π = π₁π₂...π_n: start with empty P, Q. For i from 1 to n: (1) Insert x = π_i into P via row bumping — find the leftmost entry in row 1 that is > x. If none, place x at end of row 1. If y > x is found, replace y with x (x 'bumps' y), then recursively insert y into the next row. Bumping paths move weakly left. (2) After insertion stabilizes (new cell added), place i into the corresponding cell of Q. The inverse: start with the largest entry in Q (which is n), locate its cell, perform reverse bumping on P to extract the element that was last inserted, output it as π_n, remove the cell from both tableaux. Repeat n times to recover π from right to left.",
+  "proof_strategy_text": "Well-definedness strategy: Schensted insertion always terminates because each bumped element moves to a strictly lower row (rows are finite). The bumping path moves weakly left — if x bumps y in row r, the cell left of y contains some z ≤ x < y, maintaining row monotonicity after replacement. The final placement adds exactly one cell at a row end, guaranteeing P and Q always have the same shape and are SYT. Injectivity strategy: The algorithm is deterministic — each insertion step produces a unique result from a unique input. The inverse algorithm, applied to the same (P,Q), uses reverse bumping from the cell containing n in Q, uniquely recovering π_n and the state before the last insertion; iterating recovers π uniquely. This gives an explicit inverse construction. Surjectivity strategy: The number of SYT of shape λ is f^λ (hook-length formula). By Burnside/representation theory, Σ_λ (f^λ)² = n! = |S_n|. Since the map is injective into a set of equal cardinality, it is automatically surjective — no need to construct every pair from a permutation explicitly. The hook-length formula acts as the cardinality bridge.",
+  "technique_abstraction": "Incremental insertion with local displacement (bumping). The core operation gene: process a linear sequence element by element; for each element, insert it into a growing structured container using a deterministic local replacement rule — find the first position satisfying a dominance condition, displace the occupant if any, and recursively re-insert the displaced element into a subordinate layer. The insertion order is recorded in a parallel container that acts as a timestamp log. The inverse operation reverses the process by locating the chronologically last insertion and applying reverse displacement. Structural prerequisite: the container must have a layered/hierarchical structure where displacement always moves strictly downward in the layer ordering, guaranteeing termination. The operation preserves: total element count; a shape parameter summarizing the container's layer sizes; a monotonicity property across layers. Applicable to any pair of structures where one has a natural 'sequential input' representation and the other has a 'hierarchical container with monotonic rows/levels' representation.",
+  "source_objects": ["permutation"],
+  "target_objects": ["standard_young_tableau_pair"],
+  "methods": ["rsk", "row_insertion", "schensted_insertion", "bumping"],
+  "constraints": ["size_n"],
+  "structural_features": ["permutation_like", "tableau_like", "algebraic_word"],
+  "preserved_stats": {"source": "lis_length", "target": "shape_first_part"},
+  "oeis_id": "",
+  "first_terms": [1, 2, 6, 24, 120, 720],
+  "bijection_type": "simple",
+  "paper_id": "schensted-1961",
+  "source": "seed",
+  "reviewed": true,
+  "proof_text": "Well-definedness: Schensted insertion always terminates because each bumped element moves to a strictly lower row and rows have finite length. The bumping path moves weakly left: if x bumps y in row r, the cell to the left of y's original position contains some z ≤ x < y (since x was placed in the leftmost position > x). Thus y ≥ (element bumped from left-adjacent cell), maintaining row monotonicity. The final placement adds one cell at a row end, so P and Q are always SYT of same shape. Injection: The construction is deterministic — each insertion step produces a unique result. The inverse applied to the same (P,Q) uniquely recovers π. Surjection: Burnside's identity Σ_λ (f^λ)² = n! ensures |SYT-pair set| = |S_n|. Combined with injectivity, the map is bijective. The hook-length formula gives f^λ = n! / Π_{c∈λ} h(c), and the sum of squares identity is a classical result of representation theory of S_n.",
+  "context": {
+    "paper_title": "Longest increasing and decreasing subsequences",
+    "authors": ["C. Schensted"],
+    "symbol_defs": {
+      "P": "insertion tableau — records the permutation elements",
+      "Q": "recording tableau — records the insertion order (positions i)",
+      "f^λ": "number of SYT of shape λ (hook-length formula)",
+      "SYT": "Standard Young Tableau — filling of λ with 1..n, increasing along rows and columns"
+    },
+    "references": [
+      "Schensted (1961), 'Longest increasing and decreasing subsequences'",
+      "Knuth (1970), 'Permutations, matrices, and generalized Young tableaux' — generalized to biwords",
+      "Fulton, 'Young Tableaux' — comprehensive reference",
+      "Sagan, 'The Symmetric Group' — representation-theoretic interpretation"
+    ],
+    "research_context": "The RSK correspondence is arguably the most important bijection in algebraic combinatorics. It connects permutations, Young tableaux, symmetric functions, and representation theory. The shape λ's first part equals the length of the longest increasing subsequence (Schensted's theorem). The RSK can be generalized to the RSK algorithm for matrices (Knuth), establishing the Cauchy identity for Schur functions."
+  }
+}

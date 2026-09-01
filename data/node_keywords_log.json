@@ -1,0 +1,608 @@
+{
+  "Lattice Paths (格路) > Dyck Paths (戴克路)": {
+    "node_path": [
+      "Lattice Paths (格路)",
+      "Dyck Paths (戴克路)"
+    ],
+    "llm_keywords": [
+      [
+        "Lattice Paths",
+        "Dyck Paths"
+      ]
+    ]
+  },
+  "Tilings & Polyominoes (镶嵌与多格骨牌)": {
+    "node_path": [
+      "Tilings & Polyominoes (镶嵌与多格骨牌)"
+    ],
+    "llm_keywords": [
+      [
+        "Tilings & Polyominoes"
+      ]
+    ]
+  },
+  "Words & Sequences (字与序列)": {
+    "node_path": [
+      "Words & Sequences (字与序列)"
+    ],
+    "llm_keywords": [
+      [
+        "Words & Sequences"
+      ]
+    ]
+  },
+  "Matchings (匹配) > Non-crossing Matchings (非交叉匹配)": {
+    "node_path": [
+      "Matchings (匹配)",
+      "Non-crossing Matchings (非交叉匹配)"
+    ],
+    "llm_keywords": [
+      [
+        "Matchings",
+        "Non-Crossing Matchings"
+      ]
+    ]
+  },
+  "Words & Sequences (字与序列) > Others": {
+    "node_path": [
+      "Words & Sequences (字与序列)",
+      "Others"
+    ],
+    "llm_keywords": [
+      [
+        "Words & Sequences",
+        "Arrow Rows"
+      ],
+      [
+        "Words & Sequences",
+        "Ascent Sequences"
+      ],
+      [
+        "Words & Sequences",
+        "Binary Words"
+      ]
+    ]
+  },
+  "Tilings & Polyominoes (镶嵌与多格骨牌) > Others": {
+    "node_path": [
+      "Tilings & Polyominoes (镶嵌与多格骨牌)",
+      "Others"
+    ],
+    "llm_keywords": [
+      [
+        "Tilings & Polyominoes",
+        "Bargraphs"
+      ],
+      [
+        "Tilings & Polyominoes",
+        "Polygon Dissections"
+      ],
+      [
+        "Tilings & Polyominoes",
+        "Polygon Triangulations"
+      ],
+      [
+        "Tilings & Polyominoes",
+        "Quadrangulations"
+      ]
+    ]
+  },
+  "Permutations (排列) > Others": {
+    "node_path": [
+      "Permutations (排列)",
+      "Others"
+    ],
+    "llm_keywords": [
+      [
+        "Permutations",
+        "312-Avoiding Permutations"
+      ],
+      [
+        "Permutations",
+        "Pattern-Avoiding"
+      ],
+      [
+        "Permutations",
+        "Permutation Matrices"
+      ]
+    ]
+  },
+  "Young Tableaux (杨表) > Standard Young Tableaux (标准杨表)": {
+    "node_path": [
+      "Young Tableaux (杨表)",
+      "Standard Young Tableaux (标准杨表)"
+    ],
+    "llm_keywords": [
+      [
+        "Young Tableaux",
+        "Flagged Semistandard Young Tableaux"
+      ],
+      [
+        "Young Tableaux",
+        "Semistandard Young Tableaux"
+      ],
+      [
+        "Young Tableaux",
+        "Standard Young Tableaux"
+      ]
+    ]
+  },
+  "Matchings (匹配) > Perfect Matchings (完美匹配)": {
+    "node_path": [
+      "Matchings (匹配)",
+      "Perfect Matchings (完美匹配)"
+    ],
+    "llm_keywords": [
+      [
+        "Matchings",
+        "Perfect Matchings"
+      ]
+    ]
+  },
+  "Set Partitions (集合划分)": {
+    "node_path": [
+      "Set Partitions (集合划分)"
+    ],
+    "llm_keywords": [
+      [
+        "Set Partitions"
+      ]
+    ]
+  },
+  "Permutations (排列)": {
+    "node_path": [
+      "Permutations (排列)"
+    ],
+    "llm_keywords": [
+      [
+        "Permutations"
+      ]
+    ]
+  },
+  "Lattice Paths (格路) > Schröder Paths (施罗德路)": {
+    "node_path": [
+      "Lattice Paths (格路)",
+      "Schröder Paths (施罗德路)"
+    ],
+    "llm_keywords": [
+      [
+        "Lattice Paths",
+        "Grand Schröder Paths"
+      ],
+      [
+        "Lattice Paths",
+        "Schröder Paths"
+      ]
+    ]
+  },
+  "Integer Partitions (整数分拆) > Others": {
+    "node_path": [
+      "Integer Partitions (整数分拆)",
+      "Others"
+    ],
+    "llm_keywords": [
+      [
+        "Integer Partitions",
+        "Cores"
+      ],
+      [
+        "Integer Partitions",
+        "Descending Plane Partitions"
+      ],
+      [
+        "Integer Partitions",
+        "Distinct Partitions"
+      ],
+      [
+        "Integer Partitions",
+        "Odd Partitions"
+      ],
+      [
+        "Integer Partitions",
+        "Odd and Distinct Partitions"
+      ],
+      [
+        "Integer Partitions",
+        "Skew Young Diagrams"
+      ],
+      [
+        "Integer Partitions",
+        "Splitting Partitions"
+      ],
+      [
+        "Integer Partitions",
+        "Young Diagrams"
+      ],
+      [
+        "Integer Partitions",
+        "n-Core Partitions"
+      ],
+      [
+        "Integer Partitions",
+        "Even Symmetric Plane Partitions"
+      ],
+      [
+        "Integer Partitions",
+        "Plane Partitions"
+      ],
+      [
+        "Integer Partitions",
+        "Symmetric Plane Partitions"
+      ]
+    ]
+  },
+  "Trees (树) > Binary Trees (二叉树)": {
+    "node_path": [
+      "Trees (树)",
+      "Binary Trees (二叉树)"
+    ],
+    "llm_keywords": [
+      [
+        "Trees",
+        "Binary Trees"
+      ],
+      [
+        "Trees",
+        "Ternary Trees"
+      ]
+    ]
+  },
+  "Permutations (排列) > Alternating Permutations": {
+    "node_path": [
+      "Permutations (排列)",
+      "Alternating Permutations"
+    ],
+    "llm_keywords": [
+      [
+        "Permutations",
+        "Permutations"
+      ]
+    ]
+  },
+  "Trees (树) > Spanning Trees (生成树)": {
+    "node_path": [
+      "Trees (树)",
+      "Spanning Trees (生成树)"
+    ],
+    "llm_keywords": [
+      [
+        "Trees",
+        "Spanning Forests"
+      ],
+      [
+        "Trees",
+        "Spanning Trees"
+      ]
+    ]
+  },
+  "Lattice Paths (格路)": {
+    "node_path": [
+      "Lattice Paths (格路)"
+    ],
+    "llm_keywords": [
+      [
+        "Lattice Paths"
+      ]
+    ]
+  },
+  "Combinatorial Designs (组合设计)": {
+    "node_path": [
+      "Combinatorial Designs (组合设计)"
+    ],
+    "llm_keywords": [
+      [
+        "Combinatorial Designs"
+      ]
+    ]
+  },
+  "Trees (树) > Rooted Trees (有根树)": {
+    "node_path": [
+      "Trees (树)",
+      "Rooted Trees (有根树)"
+    ],
+    "llm_keywords": [
+      [
+        "Trees",
+        "Rooted Trees"
+      ]
+    ]
+  },
+  "Young Tableaux (杨表)": {
+    "node_path": [
+      "Young Tableaux (杨表)"
+    ],
+    "llm_keywords": [
+      [
+        "Young Tableaux"
+      ]
+    ]
+  },
+  "Young Tableaux (杨表) > Shifted Tableaux (移位杨表)": {
+    "node_path": [
+      "Young Tableaux (杨表)",
+      "Shifted Tableaux (移位杨表)"
+    ],
+    "llm_keywords": [
+      [
+        "Young Tableaux",
+        "Shifted Tableaux"
+      ]
+    ]
+  },
+  "Integer Partitions (整数分拆)": {
+    "node_path": [
+      "Integer Partitions (整数分拆)"
+    ],
+    "llm_keywords": [
+      [
+        "Integer Partitions"
+      ]
+    ]
+  },
+  "Trees (树)": {
+    "node_path": [
+      "Trees (树)"
+    ],
+    "llm_keywords": [
+      [
+        "Trees"
+      ]
+    ]
+  },
+  "Trees (树) > Labeled Trees (标号树)": {
+    "node_path": [
+      "Trees (树)",
+      "Labeled Trees (标号树)"
+    ],
+    "llm_keywords": [
+      [
+        "Trees",
+        "Labeled Trees"
+      ]
+    ]
+  },
+  "Words & Sequences (字与序列) > Parking Functions (停车函数)": {
+    "node_path": [
+      "Words & Sequences (字与序列)",
+      "Parking Functions (停车函数)"
+    ],
+    "llm_keywords": [
+      [
+        "Words & Sequences",
+        "Parking Functions"
+      ]
+    ]
+  },
+  "Trees (树) > Plane Trees (平面树)": {
+    "node_path": [
+      "Trees (树)",
+      "Plane Trees (平面树)"
+    ],
+    "llm_keywords": [
+      [
+        "Trees",
+        "Ordered Forests"
+      ],
+      [
+        "Trees",
+        "Plane Trees"
+      ]
+    ]
+  },
+  "Tilings & Polyominoes (镶嵌与多格骨牌) > Domino Tilings": {
+    "node_path": [
+      "Tilings & Polyominoes (镶嵌与多格骨牌)",
+      "Domino Tilings"
+    ],
+    "llm_keywords": [
+      [
+        "Tilings & Polyominoes",
+        "Domino Tilings"
+      ]
+    ]
+  },
+  "Lattice Paths (格路) > Motzkin Paths (莫茨金路)": {
+    "node_path": [
+      "Lattice Paths (格路)",
+      "Motzkin Paths (莫茨金路)"
+    ],
+    "llm_keywords": [
+      [
+        "Lattice Paths",
+        "Motzkin Paths"
+      ]
+    ]
+  },
+  "Compositions (组合/有序划分)": {
+    "node_path": [
+      "Compositions (组合/有序划分)"
+    ],
+    "llm_keywords": [
+      [
+        "Integer Compositions"
+      ]
+    ]
+  },
+  "Hyperplane Arrangements (超平面配置) > Others": {
+    "node_path": [
+      "Hyperplane Arrangements (超平面配置)",
+      "Others"
+    ],
+    "llm_keywords": [
+      [
+        "Hyperplane Arrangements",
+        "Bounded Reorientations"
+      ]
+    ]
+  },
+  "Matroids (拟阵) > Others": {
+    "node_path": [
+      "Matroids (拟阵)",
+      "Others"
+    ],
+    "llm_keywords": [
+      [
+        "Oriented Matroids",
+        "Activity Classes"
+      ],
+      [
+        "Oriented Matroids",
+        "Bases"
+      ],
+      [
+        "Oriented Matroids",
+        "Reorientations as Subsets"
+      ],
+      [
+        "Oriented Matroids",
+        "Uniactive Internal Bases"
+      ]
+    ]
+  },
+  "Hyperplane Arrangements (超平面配置)": {
+    "node_path": [
+      "Hyperplane Arrangements (超平面配置)"
+    ],
+    "llm_keywords": [
+      [
+        "Hyperplane Arrangements"
+      ]
+    ]
+  },
+  "Combinatorial Designs (组合设计) > Others": {
+    "node_path": [
+      "Combinatorial Designs (组合设计)",
+      "Others"
+    ],
+    "llm_keywords": [
+      [
+        "Combinatorial Maps",
+        "Covered Maps"
+      ],
+      [
+        "Combinatorial Objects",
+        "Tricellular Maps"
+      ],
+      [
+        "Combinatorial Objects",
+        "Unicellular Maps"
+      ]
+    ]
+  },
+  "Young Tableaux (杨表) > Others": {
+    "node_path": [
+      "Young Tableaux (杨表)",
+      "Others"
+    ],
+    "llm_keywords": [
+      [
+        "Young Tableaux",
+        "Core Partitions"
+      ],
+      [
+        "Young Tableaux",
+        "Generalized Monotone Triangles"
+      ],
+      [
+        "Young Tableaux",
+        "Modified Monotone Triangles"
+      ],
+      [
+        "Young Tableaux",
+        "Shifted Gelfand-Tsetlin Patterns"
+      ]
+    ]
+  },
+  "Lattice Paths (格路) > Others": {
+    "node_path": [
+      "Lattice Paths (格路)",
+      "Others"
+    ],
+    "llm_keywords": [
+      [
+        "Lattice Paths",
+        "Dominant Lattice Paths"
+      ],
+      [
+        "Lattice Paths",
+        "Generalized Tamari Intervals"
+      ]
+    ]
+  },
+  "Permutations (排列) > Permutations in Cycle Form": {
+    "node_path": [
+      "Permutations (排列)",
+      "Permutations in Cycle Form"
+    ],
+    "llm_keywords": [
+      [
+        "Permutations",
+        "Permutations In Cycle Form"
+      ]
+    ]
+  },
+  "Posets & Lattices (偏序集与格) > Others": {
+    "node_path": [
+      "Posets & Lattices (偏序集与格)",
+      "Others"
+    ],
+    "llm_keywords": [
+      [
+        "Posets & Lattices",
+        "Planar Bipolar Posets"
+      ],
+      [
+        "Posets & Lattices",
+        "Tamari Intervals"
+      ]
+    ]
+  },
+  "Hyperplane Arrangements (超平面配置) > Shi Arrangements": {
+    "node_path": [
+      "Hyperplane Arrangements (超平面配置)",
+      "Shi Arrangements"
+    ],
+    "llm_keywords": [
+      [
+        "Hyperplane Arrangements",
+        "Shi Arrangements"
+      ]
+    ]
+  },
+  "Tilings & Polyominoes (镶嵌与多格骨牌) > Lozenge Tilings": {
+    "node_path": [
+      "Tilings & Polyominoes (镶嵌与多格骨牌)",
+      "Lozenge Tilings"
+    ],
+    "llm_keywords": [
+      [
+        "Tilings & Polyominoes",
+        "Lozenge Tilings"
+      ]
+    ]
+  },
+  "Trees (树) > Others": {
+    "node_path": [
+      "Trees (树)",
+      "Others"
+    ],
+    "llm_keywords": [
+      [
+        "Trees",
+        "Well-labeled g-trees"
+      ]
+    ]
+  },
+  "Posets & Lattices (偏序集与格) > Linear Extensions": {
+    "node_path": [
+      "Posets & Lattices (偏序集与格)",
+      "Linear Extensions"
+    ],
+    "llm_keywords": [
+      [
+        "Posets & Lattices",
+        "Linear Extensions"
+      ]
+    ]
+  }
+}

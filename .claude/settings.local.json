@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx skills *)",
+      "Bash(where sage *)",
+      "Bash(wsl sage *)",
+      "Bash(wsl --status)",
+      "Bash(PYTHONPATH=. python scripts/test_chromadb_contains.py)",
+      "Bash(PYTHONIOENCODING=utf-8 python -)",
+      "Bash(PYTHONIOENCODING=utf-8 python src/crawler/paper_collector.py --finalize)",
+      "Bash(PYTHONIOENCODING=utf-8 python src/crawler/paper_collector.py --stats)",
+      "Bash(where python *)",
+      "Bash(PYTHONIOENCODING=utf-8 python src/crawler/arxiv_crawler.py --dry-run)",
+      "Bash(PYTHONIOENCODING=utf-8 python *)"
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "entry_id": "will_survive",
+  "title": "",
+  "identity_text": "",
+  "method_text": "recursive decomposition method",
+  "proof_strategy_text": "",
+  "technique_abstraction": "",
+  "proof_text": "Injective by induction.",
+  "source_objects": [
+    "dyck_path"
+  ],
+  "target_objects": [
+    "binary_tree"
+  ],
+  "methods": [],
+  "constraints": [],
+  "structural_features": [],
+  "preserved_stats": {},
+  "oeis_id": "",
+  "first_terms": [],
+  "bijection_type": "simple",
+  "paper_id": "",
+  "source": "seed",
+  "reviewed": false,
+  "context": {}
+}

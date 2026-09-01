@@ -1,0 +1,36 @@
+{
+  "entry_id": "seed_conj",
+  "title": "Partition conjugation (Ferrers diagram transpose)",
+  "identity_text": "Conjugation is a self-inverse bijection on integer partitions of n. For λ = (λ₁≥...≥λ_k ≥ 1) ⊢ n, the conjugate λ' = (λ'₁≥...≥λ'_{λ₁}) is defined by λ'_i = #{j : λ_j ≥ i}. Geometrically: transpose the Ferrers diagram across the main diagonal. Exchanges 'largest part' and 'number of parts'. This is the simplest combinatorial involution.",
+  "method_text": "Given a partition λ ⊢ n drawn as a Ferrers diagram (λ_i left-justified cells in row i), reflect the diagram across the main diagonal (top-left to bottom-right). Row i of the new diagram equals column i of the original diagram read top-to-bottom. Equivalently: sort the column lengths of the original diagram in decreasing order. The operation is clearly an involution — reflecting twice returns the original diagram. No iterative steps, no branching, no complex termination conditions. The simplicity of the geometric operation makes it the canonical example of a bijection that is its own inverse.",
+  "proof_strategy_text": "Well-definedness strategy: For λ ⊢ n, verify that the conjugate satisfies: (1) λ'_i are nonnegative integers (counts of rows meeting a threshold); (2) monotonicity λ'_1 ≥ λ'_2 ≥ ... because #{k : λ_k ≥ i} ≥ #{k : λ_k ≥ i+1} — any row long enough for column i+1 is also long enough for column i; (3) total sum equals n (counting cells column-wise). Self-inverse strategy: (λ')' = λ because the Ferrers diagram viewed as a 0-1 matrix is transposed twice. The element-wise proof — (λ')'_i = #{j : λ'_j ≥ i} = #{j : #{k : λ_k ≥ j} ≥ i} = λ_i — counts cells in rows ≥ i. Bijectivity via involution: Since conjugation is its own inverse, it is automatically injective (distinct partitions have distinct conjugates: λ'=μ' ⇒ (λ')'=(μ')' ⇒ λ=μ) and surjective (every partition μ is the conjugate of μ'). No separate injectivity/surjectivity argument needed — being an involution is the strongest possible bijectivity guarantee. The proof relies entirely on the geometric symmetry of the Ferrers diagram and the interpretation of conjugation as matrix transpose.",
+  "technique_abstraction": "Geometric involution via diagram transposition. The core operation gene: represent each object as a two-dimensional diagram of cells arranged by monotone rules; apply a symmetric geometric transformation (reflection across the main diagonal) that maps the diagram to another valid diagram of the same class. The operation is its own inverse by the symmetry of the transformation — applying it twice returns the original configuration. The structural prerequisite: the object class must admit a canonical two-dimensional cell-diagram representation where both row-sorted and column-sorted readings produce valid objects of the same type. The operation automatically preserves total cell count and exchanges the two dual size parameters (row-oriented and column-oriented measures). No termination analysis, no case branching, no recursion — the geometric symmetry carries the entire bijectivity proof. Applicable to any pair of structures linked by a visual/spatial duality transformation: planar map duality, poset order-ideal complementation, set partition Kreweras complement. Particularly powerful when combined with the involution principle for constructing bijections between subsets defined by parity constraints.",
+  "source_objects": ["integer_partition"],
+  "target_objects": ["integer_partition"],
+  "methods": ["ferrers_diagram", "conjugation", "transpose", "self_inverse_involution"],
+  "constraints": ["size_n", "nonincreasing"],
+  "structural_features": ["partition_like", "involution_friendly"],
+  "preserved_stats": {},
+  "oeis_id": "A000041",
+  "first_terms": [1, 1, 2, 3, 5, 7, 11, 15, 22],
+  "bijection_type": "simple",
+  "paper_id": "standard",
+  "source": "seed",
+  "reviewed": true,
+  "proof_text": "Well-definedness: For λ ⊢ n, the conjugate parts satisfy: (1) λ'_i is a nonnegative integer; (2) λ'_1 ≥ λ'_2 ≥ ... because #{k : λ_k ≥ i} ≥ #{k : λ_k ≥ i+1} (any row long enough for column i+1 is also long enough for column i); (3) Σ_i λ'_i = total cells counted column-wise = n. Thus λ' ⊢ n. Self-inverse: (λ')' = λ because transposing a matrix twice returns the original. The element-wise proof: (λ')'_i = #{j : λ'_j ≥ i} = #{j : #{k : λ_k ≥ j} ≥ i} counts cells in rows ≥ i, which equals λ_i. Bijectivity: Since conjugation is its own inverse, it is automatically injective (λ'=μ' ⇒ λ=μ) and surjective (every μ is the conjugate of μ'). The exchange of statistics — largest part ↔ number of parts — makes conjugation the prototype for self-dual combinatorial structures.",
+  "context": {
+    "paper_title": "Standard combinatorial result (Euler, Sylvester, etc.)",
+    "authors": [],
+    "symbol_defs": {
+      "λ": "integer partition λ = (λ₁,λ₂,...,λ_k) with λ₁≥λ₂≥...≥λ_k≥1",
+      "λ'": "conjugate partition — column lengths of Ferrers diagram of λ",
+      "Ferrers diagram": "left-justified array of n cells with λ_i cells in row i",
+      "⊢ n": "partition of n"
+    },
+    "references": [
+      "Andrews, 'The Theory of Partitions' — Chapter 1",
+      "Stanley, Enumerative Combinatorics Vol. 1, §1.8"
+    ],
+    "research_context": "Conjugation is the fundamental involution on partitions. It underlies many symmetric partition identities (e.g., Euler's theorem: # partitions into odd parts = # partitions into distinct parts). The involution principle (Garsia-Milne) generalizes this idea to construct bijections by sign-reversing involutions. Conjugation also connects to the representation theory of S_n: irreducible representations are indexed by partitions, and conjugation corresponds to tensoring with the sign representation."
+  }
+}

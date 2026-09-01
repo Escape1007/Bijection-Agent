@@ -1,0 +1,306 @@
+{
+  "version": 2,
+  "description": "固定组合对象本体 — 两层设计: primary_path (树形,互斥) + cross_tags (扁平,可多选)。基于 Kreher & Stinson COMBO 库 15 类 + 组合树.md 扩展。",
+  "source": "COMBO (Kreher & Stinson, Combinatorial Algorithms, CRC Press 1998) + 用户自定义扩展",
+  "primary_tree": {
+    "name": "CombinatorialObjects",
+    "children": {
+      "Integer Partitions (整数分拆)": {
+        "definition": "integer partitions of n: λ = (λ₁ ≥ λ₂ ≥ ... ≥ λₖ > 0), Σλᵢ = n",
+        "children": {
+          "Others": {
+            "definition": "partition variants not yet classified"
+          },
+          "Plane Partitions (平面分拆)": {
+            "definition": "2-dimensional arrays of nonnegative integers, weakly decreasing along rows and columns, with entries summing to n (the 2D analogue of integer partitions)"
+          }
+        }
+      },
+      "Set Partitions (集合划分)": {
+        "definition": "partitions of an n-element set into nonempty blocks",
+        "children": {
+          "Non-crossing Set Partitions": {
+            "definition": "set partitions with no crossing blocks when drawn on a circle"
+          },
+          "Non-nesting Set Partitions": {
+            "definition": "set partitions with no nesting blocks"
+          },
+          "Others": {
+            "definition": "set partition variants not yet classified"
+          }
+        }
+      },
+      "Restricted Growth Functions (RGF)": {
+        "definition": "sequences a₁...aₙ with a₁=0, aᵢ ≤ 1+max(a₁,...,aᵢ₋₁). Bijective to set partitions (Bell numbers). Source: COMBO RGF.",
+        "children": {
+          "Others": {
+            "definition": "RGF variants not yet classified"
+          }
+        }
+      },
+      "Compositions (组合/有序划分)": {
+        "definition": "ordered tuples of positive integers summing to n",
+        "children": {
+          "Others": {
+            "definition": "composition variants not yet classified"
+          }
+        }
+      },
+      "Permutations (排列)": {
+        "definition": "bijections σ: [n] → [n]",
+        "children": {
+          "Alternating Permutations": {
+            "definition": "σ₁ < σ₂ > σ₃ < σ₄ > ... (up-down) or reverse"
+          },
+          "Derangements (错排)": {
+            "definition": "permutations with no fixed points"
+          },
+          "Involutions (对合)": {
+            "definition": "permutations σ such that σ² = id"
+          },
+          "Permutations in Cycle Form": {
+            "definition": "permutations expressed as products of disjoint cycles. Source: COMBO CYCLE."
+          },
+          "Others": {
+            "definition": "permutation variants not yet classified"
+          }
+        }
+      },
+      "Words & Sequences (字与序列)": {
+        "definition": "finite sequences over an alphabet (often [n] or {0,1})",
+        "children": {
+          "Parking Functions (停车函数)": {
+            "definition": "sequences (a₁,...,aₙ) such that |{i: aᵢ ≤ k}| ≥ k for all k"
+          },
+          "Inversion Sequences (逆序序列)": {
+            "definition": "sequences e₁...eₙ with 0 ≤ eᵢ < i"
+          },
+          "Necklaces & Bracelets (项链与手镯)": {
+            "definition": "equivalence classes of words under cyclic rotation / reflection"
+          },
+          "Others": {
+            "definition": "word/sequence variants not yet classified"
+          }
+        }
+      },
+      "Lattice Paths (格路)": {
+        "definition": "walks in Z² with restricted step sets",
+        "children": {
+          "Dyck Paths (戴克路)": {
+            "definition": "paths from (0,0) to (2n,0) with steps (1,1) and (1,-1), never below x-axis. Source: COMBO BAL."
+          },
+          "Motzkin Paths (莫茨金路)": {
+            "definition": "paths with steps (1,1), (1,-1), and (1,0), never below x-axis"
+          },
+          "Schröder Paths (施罗德路)": {
+            "definition": "paths with steps (1,1), (1,-1), and (2,0), never below x-axis"
+          },
+          "Others": {
+            "definition": "lattice path variants not yet classified"
+          }
+        }
+      },
+      "Trees (树)": {
+        "definition": "connected acyclic graphs",
+        "children": {
+          "Rooted Trees (有根树)": {
+            "definition": "trees with a distinguished root vertex"
+          },
+          "Plane Trees (平面树)": {
+            "definition": "rooted trees with ordered children (embedded in the plane)"
+          },
+          "Binary Trees (二叉树)": {
+            "definition": "rooted trees where each node has a left and/or right child"
+          },
+          "Labeled Trees (标号树)": {
+            "definition": "trees on vertex set [n] (Cayley trees)"
+          },
+          "Spanning Trees (生成树)": {
+            "definition": "subtrees of a graph that include all vertices"
+          },
+          "Others": {
+            "definition": "tree variants not yet classified"
+          }
+        }
+      },
+      "Prüfer Codes (普吕弗编码)": {
+        "definition": "sequences of length n-2 over [n], bijective to labeled trees on n vertices. Source: COMBO PRUEFER.",
+        "children": {
+          "Others": {
+            "definition": "Prüfer code variants not yet classified"
+          }
+        }
+      },
+      "Young Tableaux (杨表)": {
+        "definition": "fillings of Young diagrams with integer entries",
+        "children": {
+          "Standard Young Tableaux (标准杨表)": {
+            "definition": "SYT: bijective filling of a partition diagram with {1,...,n}, increasing in rows and columns"
+          },
+          "Semistandard Young Tableaux (半标准杨表)": {
+            "definition": "SSYT: weakly increasing rows, strictly increasing columns"
+          },
+          "Skew Tableaux (斜杨表)": {
+            "definition": "fillings of a skew shape λ/μ"
+          },
+          "Shifted Tableaux (移位杨表)": {
+            "definition": "tableaux on shifted (strict) partition diagrams"
+          },
+          "Others": {
+            "definition": "tableau variants not yet classified"
+          }
+        }
+      },
+      "Rook Placements (车放置)": {
+        "definition": "placements of non-attacking rooks on a board; rook numbers, hit numbers, and the rook polynomial. Source: Kaplansky-Riordan rook theory.",
+        "children": {
+          "Others": {
+            "definition": "rook placement variants not yet classified"
+          }
+        }
+      },
+      "Matchings (匹配)": {
+        "definition": "sets of disjoint edges in a graph",
+        "children": {
+          "Perfect Matchings (完美匹配)": {
+            "definition": "matchings covering all vertices"
+          },
+          "Non-crossing Matchings (非交叉匹配)": {
+            "definition": "matchings on [2n] with no crossing arcs when drawn on a line"
+          },
+          "Others": {
+            "definition": "matching variants not yet classified"
+          }
+        }
+      },
+      "Hyperplane Arrangements (超平面配置)": {
+        "definition": "finite collections of hyperplanes in a vector space; chambers, regions, intersection posets, and characteristic polynomials",
+        "children": {
+          "Shi Arrangements": {
+            "definition": "deformations of the braid arrangement defined by x_i - x_j ∈ {0,1}; regions bijective to parking functions"
+          },
+          "Braid Arrangements": {
+            "definition": "hyperplanes x_i = x_j for all i<j; regions correspond to permutations, intersection lattice to set partitions"
+          },
+          "Coxeter Arrangements": {
+            "definition": "reflecting hyperplanes of a finite Coxeter group; regions bijective to group elements"
+          },
+          "Others": {
+            "definition": "arrangement variants not yet classified (Catalan, Shi-Catalan, Linial, semiorder, etc.)"
+          }
+        }
+      },
+      "Tilings & Polyominoes (镶嵌与多格骨牌)": {
+        "definition": "tilings of regions by geometric tiles",
+        "children": {
+          "Domino Tilings": {
+            "definition": "tilings by 2×1 or 1×2 dominoes"
+          },
+          "Lozenge Tilings": {
+            "definition": "tilings of a hexagon by unit rhombi (lozenges)"
+          },
+          "Others": {
+            "definition": "tiling/polyomino variants not yet classified"
+          }
+        }
+      },
+      "Graph Colorings (图着色)": {
+        "definition": "proper colorings of the vertices or edges of a graph",
+        "children": {
+          "Others": {
+            "definition": "coloring variants not yet classified"
+          }
+        }
+      },
+      "Eulerian Tours (欧拉回路)": {
+        "definition": "cycles traversing every edge of a graph exactly once",
+        "children": {
+          "Others": {
+            "definition": "Eulerian/hamiltonian variants not yet classified"
+          }
+        }
+      },
+      "Alternating Sign Matrices (交错符号矩阵)": {
+        "definition": "square matrices with entries 0,±1, row/col sums = 1, alternating signs",
+        "children": {
+          "Others": {
+            "definition": "ASM variants not yet classified"
+          }
+        }
+      },
+      "Posets & Lattices (偏序集与格)": {
+        "definition": "partially ordered sets and their combinatorial invariants",
+        "children": {
+          "Linear Extensions": {
+            "definition": "topological sorts / total orders extending a poset"
+          },
+          "Order Ideals": {
+            "definition": "downward-closed subsets of a poset"
+          },
+          "Others": {
+            "definition": "poset variants not yet classified"
+          }
+        }
+      },
+      "Matroids (拟阵)": {
+        "definition": "abstraction of linear independence in vector spaces",
+        "children": {
+          "Others": {
+            "definition": "matroid variants not yet classified"
+          }
+        }
+      },
+      "Combinatorial Designs (组合设计)": {
+        "definition": "balanced arrangements of elements into blocks",
+        "children": {
+          "Latin Squares (拉丁方)": {
+            "definition": "n×n arrays with each symbol appearing once per row and column"
+          },
+          "Others": {
+            "definition": "design variants not yet classified"
+          }
+        }
+      },
+      "Subsets (子集)": {
+        "definition": "subsets of [n]; k-subsets of [n]. Source: COMBO SUBSET / KSUBSET.",
+        "children": {
+          "Others": {
+            "definition": "subset variants not yet classified"
+          }
+        }
+      },
+      "Special Functions & q-Series (特殊函数与q-级数)": {
+        "definition": "hypergeometric series, basic hypergeometric (q-series), elliptic functions, and theta functions appearing in combinatorial generating functions and partition identities",
+        "children": {
+          "Others": {
+            "definition": "function/identity variants not yet classified"
+          }
+        }
+      }
+    }
+  },
+  "cross_tags": {
+    "_comment": "以下标签可自由组合，挂到任意 primary_path 对象上。每个标签附带简短定义。",
+    "overpartition": "first occurrence of each part may be overlined / distinguished",
+    "distinct parts": "all parts are distinct (strict: λ₁ > λ₂ > ... > λₖ)",
+    "colored": "parts / elements carry colors from a palette of k colors",
+    "restricted": "parts satisfy additional congruence or gap conditions (e.g., Rogers-Ramanujan type)",
+    "plane": "2-dimensional array of integers, non-increasing along rows and columns",
+    "non-crossing": "no two blocks / arcs / edges cross in the canonical drawing",
+    "non-nesting": "no two blocks / arcs are nested in the canonical drawing",
+    "pattern-avoiding": "the object avoids a specified pattern (permutation pattern, word pattern, etc.)",
+    "signed": "elements carry a ± sign (type B / hyperoctahedral group)",
+    "labeled": "vertices / elements carry distinct labels from [n]",
+    "cyclic": "arranged on a circle / modulo cyclic rotation",
+    "weight-preserving": "the bijection preserves a weight statistic (sum, length, major index, inv, etc.)",
+    "involution": "the map is an involution: φ² = id (often sign-reversing for combinatorial cancellation)",
+    "q-analog": "enumeration refined by a statistic, expressed in q-series notation",
+    "q-series": "proof uses q-series identities (Rogers-Ramanujan type, Heine transformations, etc.)",
+    "hypergeometric": "proof involves hypergeometric series or identities",
+    "bijection to tableau": "the domain or codomain involves Young tableaux",
+    "bijection to lattice path": "the domain or codomain involves lattice paths",
+    "bijection to tree": "the domain or codomain involves trees",
+    "bijection via encoding": "the bijection uses an intermediate encoding (e.g., Prüfer code, RGF, inversion sequence)",
+    "RSK-type": "bijection of Robinson-Schensted-Knuth type (row-insertion based)"
+  }
+}
